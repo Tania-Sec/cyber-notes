@@ -1,0 +1,345 @@
+# Marcos Metodológicos Profesionales en Ciberseguridad  
+
+Las pruebas de penetración (pentesting) y el análisis de seguridad requieren metodologías estructuradas que permitan evaluar de forma sistemática las vulnerabilidades de los sistemas de información.  
+
+Estas metodologías proporcionan lineamientos, fases, procedimientos y buenas prácticas que ayudan a los profesionales de seguridad a realizar evaluaciones confiables, repetibles y alineadas con estándares internacionales.  
+
+Entre los marcos metodológicos más utilizados se encuentran OSSTMM, PTES, Rules of Engagement (RoE), Cyber Kill Chain y MITRE ATT&CK.  
+
+---
+
+## 1. OSSTMM (Open Source Security Testing Methodology Manual)
+
+### Objetivo
+El propósito de OSSTMM es establecer una metodología rigurosa para evaluar la seguridad operacional de una organización, permitiendo medir el nivel de exposición a amenazas mediante pruebas estructuradas.
+
+### Características principales
+- Metodología abierta y pública  
+- Basada en principios científicos  
+- Permite medir el nivel de seguridad real  
+- Aplicable a infraestructura, redes, personas y procesos  
+
+### Canales de Seguridad en OSSTMM
+
+#### 1. Human Security
+- Evaluación de vulnerabilidades humanas  
+- Ingeniería social  
+- Manipulación psicológica  
+
+#### 2. Physical Security
+- Acceso físico a instalaciones  
+- Seguridad de edificios  
+- Controles de acceso  
+
+#### 3. Wireless Communications
+- Seguridad en redes WiFi  
+- Protocolos inalámbricos  
+- Interceptación de señales  
+
+#### 4. Telecommunications
+- Infraestructura de telecomunicaciones  
+- Sistemas telefónicos  
+- VoIP  
+
+#### 5. Data Networks
+- Redes informáticas  
+- Protocolos de comunicación  
+- Sistemas conectados a Internet  
+
+### Fases principales
+1. Definición del alcance  
+2. Identificación de activos  
+3. Pruebas de seguridad  
+4. Análisis de vulnerabilidades  
+5. Evaluación de impacto  
+6. Reporte final  
+
+### Métrica RAV
+RAV permite medir la seguridad considerando controles, exposición y confianza operativa.
+
+---
+
+## 2. PTES (Penetration Testing Execution Standard)
+
+### Objetivo
+Proporcionar un marco estructurado para realizar pruebas de penetración de forma profesional.
+
+### Fases de PTES
+
+#### 1. Pre-engagement Interactions
+- Definición de objetivos  
+- Alcance  
+- Restricciones  
+- Autorizaciones legales  
+- Cronograma  
+
+#### 2. Intelligence Gathering
+- Dominios  
+- Direcciones IP  
+- Subdominios  
+- Tecnologías  
+- Correos electrónicos  
+- Infraestructura  
+
+#### 3. Threat Modeling
+- Arquitectura del sistema  
+- Tecnologías utilizadas  
+- Vulnerabilidades conocidas  
+- Motivaciones del atacante  
+
+#### 4. Vulnerability Analysis
+- Escáneres automatizados  
+- Análisis manual  
+- Revisión de configuraciones  
+
+Ejemplos:
+- SQL Injection  
+- XSS  
+- Puertos abiertos  
+
+#### 5. Exploitation
+Uso de herramientas como:
+- Metasploit  
+- Burp Suite  
+- Nmap  
+
+#### 6. Post Exploitation
+- Nivel de acceso  
+- Persistencia  
+- Movimiento lateral  
+- Acceso a datos críticos  
+
+#### 7. Reporting
+- Vulnerabilidades  
+- Evidencia  
+- Impacto  
+- Recomendaciones  
+
+---
+
+## 3. RoE (Rules of Engagement)
+
+### Objetivo
+Definir límites y reglas durante el pentest.
+
+### Elementos principales
+
+#### 1. Alcance
+- Dominios  
+- IPs  
+- Aplicaciones  
+
+#### 2. Fuera de alcance
+- Sistemas críticos  
+- Infraestructura sensible  
+
+#### 3. Horarios
+- Laboral  
+- Nocturno  
+- Fines de semana  
+
+#### 4. Tipos de pruebas
+- Ingeniería social  
+- Explotación  
+- DoS  
+
+#### 5. Contactos de emergencia
+- Administrador  
+- Equipo de TI  
+
+### Importancia
+Protegen legalmente y evitan daños.
+
+---
+
+## 4. Cyber Kill Chain
+
+### Fases
+
+#### 1. Reconnaissance
+- IPs  
+- Empleados  
+- Tecnologías  
+
+#### 2. Weaponization
+- Malware  
+- Exploits  
+
+#### 3. Delivery
+- Phishing  
+- Correos  
+- USB  
+
+#### 4. Exploitation
+- Vulnerabilidades  
+- Fallos  
+
+#### 5. Installation
+
+#### 6. Command and Control (C2)
+
+#### 7. Actions on Objectives
+- Robo  
+- Espionaje  
+- Ransomware  
+
+### Importancia
+Permite detectar ataques en fases tempranas.
+
+---
+
+## 5. MITRE ATT&CK
+
+### Objetivo
+Base de datos de tácticas y técnicas de atacantes.
+
+### Componentes
+
+#### Tácticas
+- Initial Access  
+- Execution  
+- Persistence  
+- Privilege Escalation  
+- Defense Evasion  
+- Credential Access  
+- Discovery  
+- Lateral Movement  
+- Collection  
+- Exfiltration  
+
+#### Técnicas
+Ejemplo:
+- Credential Access → Password Dumping  
+
+---
+
+# Conceptos y Herramientas
+
+## 1. Nmap
+
+### Funciones principales
+- Descubrimiento de hosts  
+- Escaneo de puertos  
+- Detección de servicios  
+- Detección de sistema operativo  
+- Scripts NSE  
+
+---
+
+## 2. Descubrimiento de Servicios Ocultos
+
+### Ejemplos
+- Directorios ocultos  
+- Subdominios  
+- APIs  
+- Puertos no estándar  
+
+---
+
+## 3. Movimiento Lateral
+
+### Objetivo
+- Escalar privilegios  
+- Acceder a otros sistemas  
+
+---
+
+## 4. Reverse Shell y Bind Shell
+
+### Reverse Shell
+La víctima se conecta al atacante.
+
+### Bind Shell
+El atacante se conecta a la víctima.
+
+---
+
+## 5. Fuzzing
+
+### Objetivo
+- Detectar errores  
+- Encontrar vulnerabilidades  
+
+### Herramientas
+- Burp Suite  
+- WFuzz  
+- AFL  
+- Peach  
+
+---
+
+# Escalación de Privilegios
+
+## Linux
+
+### Técnicas
+- SUID  
+- SGID  
+- Sudo  
+- Cron Jobs  
+- PATH Hijacking  
+- Capabilities  
+- Kernel Exploits  
+
+---
+
+## Windows
+
+### Privilegios vulnerables
+- SeImpersonatePrivilege  
+- SeAssignPrimaryTokenPrivilege  
+- SeBackupPrivilege  
+- SeRestorePrivilege  
+
+---
+
+# Post-Exploitation
+
+## Meterpreter
+
+### Funciones
+- Enumeración  
+- Escalación  
+- Migración  
+- Obtención de credenciales  
+
+---
+
+## Pivoting con SSH
+
+### Tipos
+- Local Port Forwarding  
+- Remote Port Forwarding  
+- Dynamic Port Forwarding  
+
+---
+
+## Proxychains
+
+### Uso
+- Nmap  
+- curl  
+- sqlmap  
+
+---
+
+## Metasploit y Msfvenom
+
+### Funciones
+- Generar payloads  
+- Reverse shells  
+- Explotación  
+
+---
+
+# Referencias
+
+- ISECOM  
+- Lockheed Martin  
+- MITRE  
+- Gordon Lyon  
+- Proxychains  
+- OpenSSH  
+- Linux Docs  
+- Microsoft  
+- Burp Suite  
